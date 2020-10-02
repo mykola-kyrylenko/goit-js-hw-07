@@ -10,14 +10,12 @@ const showCounterValue = () => {
 };
 let counterValue = 0;
 
-const decrement = function () {
-  counterValue -= 1;
-  showCounterValue();
-};
-const increment = function () {
-  counterValue += 1;
-  showCounterValue();
-};
+// const decrement = function () {
+//   counterValue -= 1;
+//   showCounterValue();
+// };
+const decrement = () => --valueRef.textContent;
+const increment = () => ++valueRef.textContent;
 
 decrementBtnRef.addEventListener("click", decrement);
 incrementBtnRef.addEventListener("click", increment);
